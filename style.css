@@ -285,14 +285,14 @@ body.contact-page {
 
 
 .contact {
-    background-color: royalblue;
+    background-color: #979726;
     color: white;
     display: flex;
     align-items: center;
     position: absolute;
     top: 10rem;
     left: 30rem;
-    width: 70rem;
+    width: 86rem;
     border-radius: 20px;
 }
 
@@ -301,7 +301,7 @@ body.contact-page {
 }
 
 .contact img {
-    width: 30rem;
+    width: 45rem;
     height: 45rem;
     border-radius: 20px 0 0 20px;
 }
