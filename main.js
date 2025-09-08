@@ -5,6 +5,10 @@ let buttonMove = document.querySelector(".mode-btn")
 
 let service1 = document.querySelector(".service-1")
 let service2 = document.querySelector(".service-2")
+let service3 = document.querySelector(".service-3")
+// let linkService1 = document.querySelector(".container-nav :nth-child(2)")
+// let linkService2 = document.querySelector(".container-nav :nth-child(3)")
+// let linkService3 = document.querySelector(".container-nav :nth-child(4)")
 
 modeBoard.onclick =  () => {
     body.classList.toggle("mode")
@@ -13,6 +17,7 @@ modeBoard.onclick =  () => {
     buttonMove?.classList.toggle("btn-move")
     service1?.classList.toggle("night-box")
     service2?.classList.toggle("night-box")
+    service3?.classList.toggle("night-box")
     localStorage.setItem("mode", body.classList.contains('mode') ? 'dark' : 'light')
 }
 if (localStorage.getItem("mode") == "dark") {
@@ -22,6 +27,7 @@ if (localStorage.getItem("mode") == "dark") {
     buttonMove?.classList.add("btn-move")
     service1?.classList.add("night-box")
     service2?.classList.add("night-box")
+    service3?.classList.add("night-box")
 }
 else {
     body.classList.remove("mode")
@@ -30,8 +36,8 @@ else {
     buttonMove?.classList.remove("btn-move")
     service1?.classList.remove("night-box")
     service2?.classList.remove("night-box")
-    }
-
+    service3?.classList.remove("night-box")
+}
 
 
 window.addEventListener("DOMContentLoaded", () => {
